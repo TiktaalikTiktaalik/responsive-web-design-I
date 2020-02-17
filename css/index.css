@@ -67,10 +67,9 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* common */
-
 body {
-	margin: 0px 510px;
+	max-width: 46%;
+	margin-left: 27%;
 }
 
 div.head nav {
@@ -83,8 +82,6 @@ div.head nav a {
 	color: #cdcdcd;
 	text-decoration: none;
 }
-
-/* index.html */
 
 div.top1 {
 	margin-top: 70px;
@@ -124,15 +121,19 @@ div.mid {
 
 div.mid .top, div.mid .bottom {
 	display: flex;
+	justify-content: space-between;
 }
 
 div.mid .top section, div.mid .bottom section {
-	margin-bottom: 35px;
+	width: 49.299%;
 	margin-top: 35px;
+	margin-bottom: 35px;
+	display: flex;
+	flex-direction: column;
 }
 
 div.mid .bottom section {
-	margin-right: 15px;
+	width: 32%;
 }
 
 footer.footer1 {
@@ -147,91 +148,101 @@ footer.footer1 p {
 	align-self: center;
 }
 
-/* Services.html */
+@media (max-width: 500px) {
+	body {
+		max-width: 100%;
+		margin-left: 0%;
+	}
 
-div.top2 {
-	margin-top: 20px;
+	div.head nav {
+		margin-top: 35px;
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		justify-content: space-between;
+	}
+
+	div.top1 {
+		margin-top: 70px;
+		margin-bottom: 70px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.top1 img {
+		margin-top: 50px;
+		width: 75%;
+		align-self: center;
+	}
+	
+	div.top1 div {
+		margin-top: 0px;
+		margin-left: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	div.top1 div h1 {
+		text-align: center;
+		font-size: 70px;
+	}
+	
+	div.top1 div button {
+		background-color: none;
+		border: black solid 1px;
+		text-align: center;
+		text-decoration: none;
+		padding: 5px;
+		width: 40%;
+		align-self: center;
+	}
 }
 
-div.top2 h1 {
-	font-size: 25px;
-	margin-top: 25px;
-}
+@media (max-width: 800px) {
+	body {
+		max-width: 100%;
+		margin-left: 0%;
+	}
 
-div.top2, div.mid2 {
-	display: flex;
-	flex-direction: column;
-}
+	div.head nav {
+		margin-top: 35px;
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		justify-content: space-between;
+	}
 
-div.mid2 {
-	display: flex;
-	border-top: black solid 1px;
-	border-bottom: black solid 1px;
-	margin-top: 40px;
-	margin-bottom: 10px;
-	padding-bottom: 40px;
-}
+	div.top1 {
+		margin-top: 70px;
+		margin-bottom: 70px;
+		display: flex;
+		flex-direction: column;
+	}
 
-div.mid2 .top, div.mid2 .mid3, div.mid2 .bottom {
-	display: flex;
-	justify-content: space-between;
-	align-content: space-between;
-}
-
-div.mid2 section {
-	display: flex;
-	flex-direction: column;
-	background: #f4f3f4;
-	border: black solid 1px;
-	padding: 10px;
-	width: 410px;
-	margin-top: 40px;
-}
-
-div.mid2 h2 {
-	margin-top: 5px;
-}
-
-div.mid2 button {
-	align-self: flex-start;
-	background-color: #ffffff;
-	border: black solid 1px;
-	border-radius: 5px;
-	padding: 7px 30px;
-	font-size: 12px;
-	margin-top: 15px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-}
-
-footer.footer2 {
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-}
-
-footer.footer2 div {
-	display: flex;
-	justify-content: space-between;
-}
-
-footer.footer2 div div{
-	display: flex;
-	flex-direction: column;
-	width: 400px;
-}
-
-footer.footer2 div div ul li {
-	list-style-type: square;
-	margin-top: 15px;
-	margin-left: 17px;
-}
-
-footer.footer2 p {
-	margin-bottom: 15px;
-}
-
-footer.footer2 p.copyright {
-	margin-top: 100px;
-	align-self: center;
+	div.top1 img {
+		margin-top: 50px;
+		align-self: center;
+	}
+	
+	div.top1 div {
+		margin-top: 0px;
+		margin-left: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	div.top1 div h1 {
+		text-align: center;
+		font-size: 70px;
+	}
+	
+	div.top1 div button {
+		background-color: none;
+		border: black solid 1px;
+		text-align: center;
+		text-decoration: none;
+		padding: 5px;
+		width: 40%;
+		align-self: center;
+	}
 }
