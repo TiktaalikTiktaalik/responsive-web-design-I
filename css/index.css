@@ -157,16 +157,18 @@ footer.footer1 p {
 	div.head nav {
 		margin-top: 35px;
 		display: flex;
-		flex-direction: column;
-		width: 30%;
+		width: 100%;
 		justify-content: space-between;
 	}
 
+	div.head nav img {
+		width: 70%;
+	}
+
 	div.top1 {
-		margin-top: 70px;
-		margin-bottom: 70px;
+		margin-top: 0px;
+		margin-bottom: 50px;
 		display: flex;
-		flex-direction: column;
 	}
 
 	div.top1 img {
@@ -175,15 +177,16 @@ footer.footer1 p {
 	}
 	
 	div.top1 div {
-		margin-top: 0px;
+		margin-top: 60px;
 		margin-left: 0px;
 		display: flex;
 		flex-direction: column;
 	}
 	
 	div.top1 div h1 {
+		margin-top: 30px;
 		text-align: center;
-		font-size: 70px;
+		font-size: 60px;
 	}
 	
 	div.top1 div button {
@@ -192,7 +195,7 @@ footer.footer1 p {
 		text-align: center;
 		text-decoration: none;
 		padding: 5px;
-		width: 140px;
+		width: 130px;
 		align-self: center;
 	}
 }
@@ -200,7 +203,6 @@ footer.footer1 p {
 @media (max-width: 500px) {
 	body {
 		max-width: 100%;
-		margin-left: 0%;
 	}
 
 	div.head nav {
@@ -212,14 +214,14 @@ footer.footer1 p {
 	}
 
 	div.top1 {
-		margin-top: 70px;
+		margin-top: 20px;
 		margin-bottom: 70px;
 		display: flex;
 		flex-direction: column;
 	}
 
 	div.top1 img {
-		margin-top: 50px;
+		margin-top: 40px;
 		width: 75%;
 		align-self: center;
 	}
@@ -233,7 +235,7 @@ footer.footer1 p {
 	
 	div.top1 div h1 {
 		text-align: center;
-		font-size: 400%;
+		font-size: 60px;
 	}
 	
 	div.top1 div button {
