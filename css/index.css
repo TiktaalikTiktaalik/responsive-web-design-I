@@ -162,7 +162,7 @@ footer.footer1 p {
 	}
 
 	div.head nav img {
-		width: 70%;
+		width: 60%;
 	}
 
 	div.top1 {
@@ -177,10 +177,14 @@ footer.footer1 p {
 	}
 	
 	div.top1 div {
-		margin-top: 60px;
-		margin-left: 0px;
+		margin-top: 70px;
+		margin-left: 70px;
 		display: flex;
 		flex-direction: column;
+	}
+
+	div.top1 img {
+		width: 45%;
 	}
 	
 	div.top1 div h1 {
